@@ -30,15 +30,13 @@ class MainActivity : AppCompatActivity(), OnFragmentFinish {
     }
 
     private fun askPermission(requestId: Int, permissionName: String): Boolean {
-        if (Build.VERSION.SDK_INT >= 23) {
-            val permission = ActivityCompat.checkSelfPermission(this, permissionName)
-            if (permission != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(
-                    arrayOf(permissionName),
-                    requestId
-                )
-                return false
-            }
+        val permission = ActivityCompat.checkSelfPermission(this, permissionName)
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(
+                arrayOf(permissionName),
+                requestId
+            )
+            return false
         }
         return true
     }

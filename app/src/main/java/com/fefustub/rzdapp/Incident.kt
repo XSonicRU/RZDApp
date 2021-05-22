@@ -9,8 +9,12 @@ class Incident(
     var TICKETID: String? = null,
     var DESCRIPTION: String? = null,
     var ISKNOWNERRORDATE: String? = null,
-    var TARGETFINISH: String?,
-    var EXTSYSNAME: String? = null
+    var TARGETFINISH: String? = null,
+    var EXTSYSNAME: String? = null,
+    var REPORTEDBY: String? = null,
+    var CRITIC_LEVEL: String? = null,
+    var NORM: String? = null,
+    var LNORM: String? = null
 ) {
     var ERRORDATE: Date? = null
     var TARGETFINISHDATE: Date? = null

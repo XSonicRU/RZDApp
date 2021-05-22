@@ -25,7 +25,7 @@ class ListViewFragment : Fragment(), OnFragmentFinish {
     override fun onStart() {
         super.onStart()
         val view = requireView()
-        adapter = ListViewAdapter(requireContext(), IncidentController.incidentList!!, this)
+        adapter = ListViewAdapter(requireActivity(), IncidentController.incidentList!!, this)
         view.findViewById<ListView>(R.id.visitview).adapter = adapter
     }
 

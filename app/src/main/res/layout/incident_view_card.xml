@@ -37,7 +37,8 @@
                 android:id="@+id/descriptionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
                 android:gravity="center_vertical"
                 android:text="П/Недовернутые шурупы; АКТИВ: Стрелочный перевод № 10, на станции УЖОВКА ( 0 км, 1 пк, 67 м - 0 км, 1 пк, 67 м )"
                 android:textColor="#343434"
@@ -118,7 +119,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textViewFoundLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -135,4 +136,5 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

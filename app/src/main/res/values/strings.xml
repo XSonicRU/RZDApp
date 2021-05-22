@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Инциденты</string>
+    <string name="incident_view_label">Инцидент</string>
     <string name="not_defined">Не указано</string>
+    <string name="incident_info_label">Общая информация</string>
+    <string name="desc_text_pl">%1$s (%2$s)</string>
 </resources>
