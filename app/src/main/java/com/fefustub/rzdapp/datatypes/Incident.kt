@@ -1,4 +1,4 @@
-package com.fefustub.rzdapp
+package com.fefustub.rzdapp.datatypes
 
 import android.text.SpannableString
 import java.time.Instant
@@ -15,6 +15,7 @@ class Incident(
     var REPORTEDBY: String? = null,
     var CRITIC_LEVEL: String? = null,
     var NORM: String? = null,
+    var CLASSIDMAIN: String? = null,
     var LNORM: String? = null
 ) {
     var searchableDesc : SpannableString = SpannableString.valueOf(DESCRIPTION)

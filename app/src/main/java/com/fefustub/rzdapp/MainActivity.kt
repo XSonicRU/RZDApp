@@ -4,6 +4,7 @@ import ListViewAdapter
 import android.Manifest
 import android.app.SearchManager
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.Cursor
 import android.database.MatrixCursor
@@ -17,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.view.MenuItemCompat
 import com.fefustub.rzdapp.common.OnFragmentFinish
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
 
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity(), OnFragmentFinish, SearchView.OnQueryTe
         setContentView(R.layout.activity_main)
         askReadFilePermission()
         IncidentController.parse()
-        adapter = ListViewAdapter(this,IncidentController.incidentList!!)
+        adapter = ListViewAdapter(this, IncidentController.incidentList!!)
         (supportFragmentManager.fragments[0] as ListViewFragment).adapter = adapter
         adapter.filter("")
     }

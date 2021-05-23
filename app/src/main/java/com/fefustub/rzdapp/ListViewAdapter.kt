@@ -1,5 +1,4 @@
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.text.style.BackgroundColorSpan
@@ -9,10 +8,9 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import androidx.core.text.clearSpans
-import com.fefustub.rzdapp.Incident
+import com.fefustub.rzdapp.datatypes.Incident
 import com.fefustub.rzdapp.IncidentViewActivity
 import com.fefustub.rzdapp.R
-import com.fefustub.rzdapp.common.OnFragmentFinish
 import java.text.SimpleDateFormat
 import java.util.*
 

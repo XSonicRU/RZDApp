@@ -6,4 +6,8 @@
     <string name="desc_text_pl">%1$s (%2$s)</string>
     <string name="search_val">Поиск</string>
     <string name="search_hint">Введите запрос…</string>
+    <string name="create_incident_title">Данные инцидента</string>
+    <string name="inc_type_label">Вид неисправности</string>
+    <string name="inc_save_title">Сохранить инцидент</string>
+    <string name="save_failure">Сначала, выберите неисправность из списка…</string>
 </resources>
