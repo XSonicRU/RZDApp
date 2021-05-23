@@ -11,7 +11,7 @@ import com.fefustub.rzdapp.common.OnFragmentFinish
 
 
 class ListViewFragment : Fragment(), OnFragmentFinish {
-    private lateinit var adapter: ListViewAdapter
+    lateinit var adapter: ListViewAdapter
     private lateinit var onFinishListener: OnFragmentFinish
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,7 +25,6 @@ class ListViewFragment : Fragment(), OnFragmentFinish {
     override fun onStart() {
         super.onStart()
         val view = requireView()
-        adapter = ListViewAdapter(requireActivity(), IncidentController.incidentList!!, this)
         view.findViewById<ListView>(R.id.visitview).adapter = adapter
     }
 

@@ -1,5 +1,6 @@
 package com.fefustub.rzdapp
 
+import android.text.SpannableString
 import java.time.Instant
 import java.time.OffsetDateTime
 import java.util.*
@@ -16,6 +17,7 @@ class Incident(
     var NORM: String? = null,
     var LNORM: String? = null
 ) {
+    var searchableDesc : SpannableString = SpannableString.valueOf(DESCRIPTION)
     var ERRORDATE: Date? = null
     var TARGETFINISHDATE: Date? = null
 

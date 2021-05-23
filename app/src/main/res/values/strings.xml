@@ -4,4 +4,6 @@
     <string name="not_defined">Не указано</string>
     <string name="incident_info_label">Общая информация</string>
     <string name="desc_text_pl">%1$s (%2$s)</string>
+    <string name="search_val">Поиск</string>
+    <string name="search_hint">Введите запрос…</string>
 </resources>
